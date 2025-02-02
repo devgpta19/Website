@@ -3,7 +3,7 @@ import HomeNav from "./HomeNav";
 import { ChartBar, Brain, RefreshCw, Zap, Users } from "lucide-react";
 
 const FeatureCard = ({ icon: Icon, title, description, style }) => (
-  <div className="absolute flex flex-col items-center gap-3 p-6 w-80 bg-black/40 border border-[#27272a] rounded-lg pointer-events-none" style={style}>
+  <div className="absolute flex flex-col items-center gap-3 p-6 w-80 bg-black/30 border border-[#27272a] rounded-lg pointer-events-none" style={style}>
     {/* Card glow effect */}
     <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-purple-600/5 rounded-2xl blur-xl transition-all group-hover:blur-2xl" />
     <div>
@@ -89,14 +89,14 @@ const HomePage = () => {
             </p>
             {/* Vertical Card Scrolling Animation (Mobile) */}
             {/* lg:sr-only */}
-            <div className="cont h-74 sm:sr-only ">
+            <div className="cont h-80 sm:sr-only ">
               <div className="cards relative items-center justify-center border min-h-fit mt-5 w-full">
                 {features.map((feature, index) => (
                   <FeatureCard
                     key={index}
                     {...feature}
                     style={{
-                      animation: `slideVertical 15s infinite ${index * 3}s`,
+                      animation: `slideVertical 10s infinite ${index * 2}s`,
                       opacity: 0,
                     }}
                   />
@@ -111,7 +111,7 @@ const HomePage = () => {
                     key={index}
                     {...feature}
                     style={{
-                      animation: `slideHorizontal 15s infinite ${index * 3}s`,
+                      animation: `slideHorizontal 10s infinite ${index * 2}s`,
                       opacity: 0,
                     }}
                   />
