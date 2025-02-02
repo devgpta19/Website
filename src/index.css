@@ -1,0 +1,621 @@
+@import "tailwindcss";
+
+*{
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+  display :none;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient-move 3s linear infinite;
+}
+
+
+
+
+/* Vertical Card Scrolling Animation */
+/* .cont {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  -webkit-mask-box-image: -webkit-linear-gradient(
+    top,
+    transparent,
+    transparent 0,
+    white 10%,
+    white 80%,
+    transparent 100%
+  );
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 10px;
+  padding: 1.5rem;
+  opacity: 0;
+  background: #fff;
+  max-width: 30rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+  animation: slideUp 15s infinite;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(171, 32, 253, 0.1);
+  border-radius: 12px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #666;
+}*/
+
+/* Animation Delays */
+/*.card-1 {
+  animation-delay: -3s;
+}
+
+.card-2 {
+  animation-delay: 0s;
+}
+
+.card-3 {
+  animation-delay: 3s;
+}
+
+.card-4 {
+  animation-delay: 6s;
+}
+
+.card-5 {
+  animation-delay: 9s;
+}
+
+.card-6 {
+  animation-delay: 12s;
+}
+
+.card-7 {
+  animation-delay: 15s;
+}
+
+.card-8 {
+  animation-delay: 18s;
+}
+
+.card-9 {
+  animation-delay: 21s;
+}
+
+.card-10 {
+  animation-delay: 24s;
+}
+
+.card-11 {
+  animation-delay: 27s;
+}
+
+.card-12 {
+  animation-delay: 30s;
+}
+
+.card-13 {
+  animation-delay: 33s;
+}
+
+.card-14 {
+  animation-delay: 36s;
+}*/
+
+/* Keyframes for Animation */
+/*@keyframes slideUp {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+  }
+
+  5%,
+  20% {
+    transform: translateY(100%) scale(0.7);
+    opacity: 0.4;
+  }
+
+  25%,
+  40% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  45%,
+  60% {
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.4;
+  }
+
+  65%,
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+  }
+} */
+
+
+
+
+
+
+
+/* Horizontal Card Scrolling Animation */
+/* .cont {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  overflow: hidden;
+  -webkit-mask-box-image: -webkit-linear-gradient(
+    left,
+    transparent,
+    transparent 0,
+    white 10%,
+    white 80%,
+    transparent 100%
+  );
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+*/
+
+/*.card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.5rem;
+  opacity: 0;
+  background: #fff;
+  max-width: 30rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+  animation: slideHorizontal 15s infinite;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(171, 32, 253, 0.1);
+  border-radius: 12px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #666;
+} */
+
+/* Animation Delays */
+/*.card-1 {
+  animation-delay: -3s;
+}
+
+.card-2 {
+  animation-delay: 0s;
+}
+
+.card-3 {
+  animation-delay: 3s;
+}
+
+.card-4 {
+  animation-delay: 6s;
+}
+
+.card-5 {
+  animation-delay: 9s;
+}
+
+.card-6 {
+  animation-delay: 12s;
+}
+
+.card-7 {
+  animation-delay: 15s;
+}
+
+.card-8 {
+  animation-delay: 18s;
+}
+
+.card-9 {
+  animation-delay: 21s;
+}
+
+.card-10 {
+  animation-delay: 24s;
+}
+
+.card-11 {
+  animation-delay: 27s;
+}
+
+.card-12 {
+  animation-delay: 30s;
+}
+
+.card-13 {
+  animation-delay: 33s;
+}
+
+.card-14 {
+  animation-delay: 36s;
+}*/
+
+/* Keyframes for Horizontal Animation */
+/*@keyframes slideHorizontal {
+  0% {
+    transform: translateX(100%) scale(0.5);
+    opacity: 0;
+  }
+
+  5%,
+  20% {
+    transform: translateX(100%) scale(0.7);
+    opacity: 0.4;
+  }
+
+  25%,
+  40% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+
+  45%,
+  60% {
+    transform: translateX(-100%) scale(0.7);
+    opacity: 0.4;
+  }
+
+  65%,
+  100% {
+    transform: translateX(-100%) scale(0.5);
+    opacity: 0;
+  }
+}*/
+
+/* Base Styles for Cards */
+.cont {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.5rem;
+  opacity: 0;
+  background: #fff;
+  max-width: 30rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(171, 32, 253, 0.1);
+  border-radius: 12px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Vertical Animation for Mobile */
+@media (max-width: 767px) {
+  .cont {
+    -webkit-mask-box-image: -webkit-linear-gradient(
+      top,
+      transparent,
+      transparent 0,
+      white 10%,
+      white 80%,
+      transparent 100%
+    );
+  }
+
+  .cards {
+    flex-direction: column; /* Vertical layout for mobile */
+  }
+
+  .card {
+    animation: slideVertical 15s infinite;
+  }
+
+  /* Animation Delays */
+  .card-1 {
+    animation-delay: -3s;
+  }
+
+  .card-2 {
+    animation-delay: 0s;
+  }
+
+  .card-3 {
+    animation-delay: 3s;
+  }
+
+  .card-4 {
+    animation-delay: 6s;
+  }
+
+  .card-5 {
+    animation-delay: 9s;
+  }
+
+  .card-6 {
+    animation-delay: 12s;
+  }
+
+  .card-7 {
+    animation-delay: 15s;
+  }
+
+  .card-8 {
+    animation-delay: 18s;
+  }
+
+  .card-9 {
+    animation-delay: 21s;
+  }
+
+  .card-10 {
+    animation-delay: 24s;
+  }
+
+  .card-11 {
+    animation-delay: 27s;
+  }
+
+  .card-12 {
+    animation-delay: 30s;
+  }
+
+  @keyframes slideVertical {
+    0% {
+      transform: translateY(100%) scale(0.5);
+      opacity: 0;
+    }
+
+    5%,
+    20% {
+      transform: translateY(100%) scale(0.7);
+      opacity: 0.4;
+    }
+
+    25%,
+    40% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+
+    45%,
+    60% {
+      transform: translateY(-100%) scale(0.7);
+      opacity: 0.4;
+    }
+
+    65%,
+    100% {
+      transform: translateY(-100%) scale(0.5);
+      opacity: 0;
+    }
+  }
+}
+
+/* Horizontal Animation for Larger Screens */
+@media (min-width: 768px) {
+  .cont {
+    -webkit-mask-box-image: -webkit-linear-gradient(
+      left,
+      transparent,
+      transparent 0,
+      white 10%,
+      white 80%,
+      transparent 100%
+    );
+  }
+
+  .cards {
+    flex-direction: row; /* Horizontal layout for larger screens */
+  }
+
+  .card {
+    animation: slideHorizontal 15s infinite;
+  }
+
+  /* Animation Delays */
+  .card-1 {
+    animation-delay: -3s;
+  }
+
+  .card-2 {
+    animation-delay: 0s;
+  }
+
+  .card-3 {
+    animation-delay: 3s;
+  }
+
+  .card-4 {
+    animation-delay: 6s;
+  }
+
+  .card-5 {
+    animation-delay: 9s;
+  }
+
+  .card-6 {
+    animation-delay: 12s;
+  }
+
+  .card-7 {
+    animation-delay: 15s;
+  }
+
+  .card-8 {
+    animation-delay: 18s;
+  }
+
+  .card-9 {
+    animation-delay: 21s;
+  }
+
+  .card-10 {
+    animation-delay: 24s;
+  }
+
+  .card-11 {
+    animation-delay: 27s;
+  }
+
+  .card-12 {
+    animation-delay: 30s;
+  }
+
+  @keyframes slideHorizontal {
+    0% {
+      transform: translateX(100%) scale(0.5);
+      opacity: 0;
+    }
+
+    5%,
+    20% {
+      transform: translateX(100%) scale(0.7);
+      opacity: 0.4;
+    }
+
+    25%,
+    40% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+
+    45%,
+    60% {
+      transform: translateX(-100%) scale(0.7);
+      opacity: 0.4;
+    }
+
+    65%,
+    100% {
+      transform: translateX(-100%) scale(0.5);
+      opacity: 0;
+    }
+  }
+}

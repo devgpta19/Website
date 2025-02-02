@@ -1,0 +1,59 @@
+{
+  "JobID": "FE101",
+  "Title": "Frontend Developer Intern – TradyLytics",
+  "Location": "Remote",
+  "Posting_Date": "25  Jan, 2025",
+  "Duration": "2-6 months",
+"Experience":"Fresher",
+  "Type": "Internship",
+  "TechStack": ["Html", "TailwindCSS", "Javascript", "React.js"],
+  "Aboutus": "At TradyLytics, we’re on a mission to empower traders with advanced analytics, actionable insights, and performance metrics. Built by traders for traders, we leverage cutting-edge technology to create tools that help traders make informed decisions and achieve consistent profitability.\n\nAs a Frontend Developer Intern, you will work closely with our team of experienced developers and designers to create intuitive, responsive, and visually appealing interfaces that drive the user experience of our platform.",
+  "KeyResponsibilities": {
+    "UI / UX Implementation": [
+      "Develop and maintain user interfaces using React and TailwindCSS.",
+      "Translate design mockups from Figma or similar tools into responsive and pixel-perfect web pages.",
+      "Ensure consistent styling and user experience across different browsers and devices."
+    ],
+    "Performance Optimization": [
+      "Optimize web pages for maximum speed and scalability.",
+      "Identify and resolve UI bugs and performance bottlenecks."
+    ],
+    "API Integration": [
+      "Collaborate with backend developers to integrate RESTful APIs and display data dynamically.",
+      "Handle asynchronous requests and manage state effectively using tools like Redux or Context API."
+    ],
+    "Testing and Debugging": [
+      "Test and debug frontend code to ensure functionality and compatibility.",
+      "Implement error-handling mechanisms for seamless user experience."
+    ],
+    "Team Collaboration": [
+      "Work closely with the design, backend, and product teams to understand project requirements and deliver on deadlines.",
+      "Provide feedback and suggestions to improve the platform’s overall functionality and usability."
+    ]
+  },
+  "KeySkillsandRequirements": {
+    "Core Technical Skills": [
+      "Proficiency in ReactJS and JavaScript.",
+      "Strong understanding of HTML5, CSS3, and TailwindCSS or similar CSS frameworks.",
+      "Familiarity with frontend build tools like Webpack, Vite, or Parcel.",
+      "Experience with Git for version control."
+    ],
+    "Bonus Skills (Preferred, Not Mandatory)": [
+      "Knowledge of state management libraries like Redux, MobX, or Context API.",
+      "Familiarity with testing libraries like Jest or React Testing Library.",
+      "Basic understanding of accessibility standards (WCAG) and SEO."
+    ]
+  },
+  "PerksandBenefits": [
+    "Mentorship from IIT alumni with expertise in software development and market strategies.",
+    "Opportunity to work on real-world projects in the fintech domain.",
+    "Exposure to the entire product development lifecycle, from ideation to deployment.",
+    "Networking opportunities with industry professionals.",
+    "Certificate of completion and a letter of recommendation (based on performance)."
+  ],
+  "WhyJoinUs": [
+    "Be part of a dynamic team building innovative tools for traders.",
+    "Learn and grow in a supportive environment with structured guidance.",
+    "Gain hands-on experience with the latest web development technologies."
+  ]
+}

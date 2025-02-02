@@ -1,0 +1,32 @@
+[
+  {
+    "id": "FE101",
+    "title": "Frontend Intern",
+    "date": "2025-01-26",
+    "techstack": ["React", "JavaScript", "TailwindCSS"]
+  },
+  {
+    "id": "BE101",
+    "title": "Backend Intern",
+    "date": "2025-01-26",
+    "techstack": ["Node.js", "Express", "MongoDB"]
+  },
+  {
+    "id": "SM101",
+    "title": "Social Marketing",
+    "date": "2025-01-26",
+    "techstack": ["SEO", "Content Marketing", "Social Media Management"]
+  },
+  {
+    "id": "UI101",
+    "title": "UI/UX Designer",
+    "date": "2025-01-26",
+    "techstack": ["Figma", "Adobe XD", "Prototyping"]
+  },
+  {
+    "id": "AD101",
+    "title": "Android Developer",
+    "date": "2025-01-26",
+    "techstack": ["Java", "Kotlin", "Android Studio", "Firebase"]
+  }
+]
