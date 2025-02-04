@@ -88,7 +88,6 @@ const HomePage = () => {
               <i>Turn Data into Decisions, Losses into Lessons, and Insights into Profits.</i>
             </p>
             {/* Vertical Card Scrolling Animation (Mobile) */}
-            {/* lg:sr-only */}
             <div className="cont h-80 sm:sr-only ">
               <div className="cards relative items-center justify-center border min-h-fit mt-5 w-full">
                 {features.map((feature, index) => (

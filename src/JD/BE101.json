@@ -1,0 +1,57 @@
+{
+    "JobID": "BE101",
+    "Title": "Backend Developer Intern – TradyLytics",
+    "Location": "Remote",
+    "Duration": "2-6 months (Flexible based on candidate availability)",
+    "Type": "Internship",
+    "About TradyLytics": "At TradyLytics, we’re on a mission to empower traders with advanced analytics, actionable insights, and performance metrics. Built by traders for traders, we leverage cutting-edge technology to create tools that help traders make informed decisions and achieve consistent profitability.\n\nAs a Backend Developer Intern, you will play a critical role in building and maintaining the server-side logic and database architecture that powers our platform. You will work alongside a talented team to create robust, scalable, and efficient backend systems.",
+    "Key Responsibilities": {
+        "API Development": [
+            "Design, develop, and maintain RESTful APIs using Node.js and Express.js.",
+            "Ensure APIs are secure, scalable, and optimized for performance."
+        ],
+        "Database Management": [
+            "Develop and manage database schemas using MongoDB.",
+            "Optimize database queries for performance and scalability.",
+            "Implement data validation and integrity checks."
+        ],
+        "Integration and Communication": [
+            "Collaborate with frontend developers to integrate APIs and deliver seamless functionality.",
+            "Work with external APIs and services for data synchronization and processing."
+        ],
+        "System Optimization": [
+            "Monitor and improve the performance of server-side applications.",
+            "Identify and resolve bottlenecks in backend processes."
+        ],
+        "Testing and Debugging": [
+            "Write and execute unit and integration tests for backend components.",
+            "Debug and fix issues to ensure the stability and reliability of the system."
+        ]
+    },
+    "Key Skills and Requirements": {
+        "Core Technical Skills": [
+            "Proficiency in Node.js and Express.js.",
+            "Strong understanding of MongoDB and database design principles.",
+            "Familiarity with RESTful API design and implementation.",
+            "Experience with Git for version control."
+        ],
+        "Bonus Skills (Preferred, Not Mandatory)": [
+            "Knowledge of authentication mechanisms (e.g., OAuth).",
+            "Familiarity with cloud platforms (e.g., AWS, GCP) and deployment pipelines.",
+            "Experience with message queues like RabbitMQ or Kafka."
+        ]
+    },
+    "Perks and Benefits": [
+        "Mentorship from IIT alumni with expertise in software development and market strategies.",
+        "Opportunity to work on real-world projects in the fintech domain.",
+        "Exposure to the entire product development lifecycle, from ideation to deployment.",
+        "Networking opportunities with industry professionals.",
+        "Certificate of completion and a letter of recommendation (based on performance)."
+    ],
+    "Why Join Us": [
+        "Be part of a dynamic team building innovative tools for traders.",
+        "Learn and grow in a supportive environment with structured guidance.",
+        "Gain hands-on experience with the latest backend development technologies.",
+        "Even if you’re not fully experienced, if you’re willing to give 100% effort and are passionate about learning, we welcome you!"
+    ]
+}

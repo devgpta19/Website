@@ -13,7 +13,7 @@ import {
 
 const FeatureCard = ({ icon: Icon, title, description, isHovered, onHover, index }) => (
   <div
-    className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd]/30 transition-all duration-300"
+    className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd] transition-all duration-300 flex flex-col justify-between cursor-pointer"
     onMouseEnter={() => onHover(true)}
     onMouseLeave={() => onHover(false)}
     style={{
@@ -25,15 +25,15 @@ const FeatureCard = ({ icon: Icon, title, description, isHovered, onHover, index
     <div className="absolute inset-0 bg-gradient-to-br from-[#ab20fd]/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300" />
 
     {/* Icon Container */}
-    <div className="w-12 h-12 rounded-xl bg-[#ab20fd]/10 flex items-center justify-center mb-4">
+    <div className="w-12 h-12 rounded-xl bg-[#ab20fd]/10 text-[#ab20fd] flex items-center justify-center mb-4">
       <div
         className={`relative flex items-center justify-center w-full h-full rounded-xl transition-all duration-300 
-        ${isHovered ? "bg-[#ab20fd]/20" : "bg-black"}`}
+        ${isHovered ? "bg-[#ab20fd]/20" : "bg-[#ab20fd]/10"}`}
       >
         {/* Icon */}
         <Icon
           className={`w-6 h-6 text-[#ab20fd] group-hover:scale-110 transition-transform duration-300 
-          ${isHovered ? "text-[#ab20fd] scale-110" : "text-zinc-500"}`}
+          ${isHovered ? "text-[#ab20fd] scale-110" : "text-purple-500"}`}
         />
       </div>
     </div>

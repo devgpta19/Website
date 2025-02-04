@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Top Border */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-[#ab20fd]/20 to-transparent" />
 
-        <div className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 ">
+        <div className="py-16 grid grid-cols-1 xl:grid-cols-2 gap-16 ">
           {/* Left Section - Logo */}
           <div >
             <h1 className="text-4xl md:text-6xl lg:text-[8rem] text-[#ab20fd] font-semibold tracking-tight leading-none">

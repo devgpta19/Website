@@ -138,7 +138,7 @@ const WhyJoinUs = () => {
           {perks.slice(0, 6).map((perk, index) => (
             <div
               key={index}
-              className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd]/30 transition-all duration-300"
+              className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd] transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-[#ab20fd]/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300" />
               <div className="w-12 h-12 rounded-xl bg-[#ab20fd]/10 flex items-center justify-center mb-4">

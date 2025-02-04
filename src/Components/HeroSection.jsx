@@ -6,8 +6,8 @@ const CareerHero = () => {
   return (
     <div className="min-h-full bg-black text-white overflow-hidden">
       {/* Top Navigation */}
-     
-     <HomeNav/>
+
+      <HomeNav />
 
       {/* Main Content */}
       <main className="relative mt-4  flex items-center  ">
@@ -78,6 +78,7 @@ const CareerHero = () => {
                   className="group relative px-6 py-3 bg-[#ab20fd] rounded-full 
                   hover:bg-[#ab20fd]/90 transition-colors"
                 >
+                  {/* <button className="group inline-flex items-center gap-2 px-8 py-4 bg-[#ab20fd] rounded-xl hover:bg-[#ab20fd]/90 cursor-pointer transition-all "></button> */}
                   <span className="flex items-center gap-2">
                     View Open Positions
                     <ArrowUpRight
@@ -87,13 +88,22 @@ const CareerHero = () => {
                   </span>
                 </button>
                 <button
-                  className="group inline-flex px-6 py-3 items-center border border-[#ab20fd] rounded-full gap-2 text-gray-400 
-                  hover:text-white transition-colors"
+                  className="group inline-flex px-6 py-3 items-center border border-[#ab20fd]/50 rounded-full gap-2 text-gray-400 
+                  hover:text-white hover:border-[#ab20fd]/60 transition-colors"
                 >
                   Explore More
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
+
+              {/* <div className="text-center mt-20">
+                <p className="text-gray-400 mb-6">Ready to start your journey with us?</p>
+                <button className="group inline-flex items-center gap-2 px-8 py-4 bg-[#ab20fd] rounded-xl hover:bg-[#ab20fd]/90 cursor-pointer transition-all ">
+                  <span className="text-white font-medium">Apply Now</span>
+                  <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div> */}
+
             </div>
 
             {/* Visual Section */}

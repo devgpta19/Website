@@ -1,8 +1,7 @@
-
-
 import React, { useState } from "react";
 import JobDesc from "./Job.json";
 import HomeNav from "./HomeNav";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   ArrowRight,
   Briefcase,
@@ -22,7 +21,11 @@ import {
 import Footer from "./Footer";
 
 const JobDescription = () => {
+  // import JobDesc from './Job.json';
   const [isApplyHovered, setIsApplyHovered] = useState(false);
+  const { jobid } = useParams();
+  const navigate = useNavigate();
+  console.log(jobid);
 
   const InfoCard = ({ icon: Icon, title, value }) => (
     <div className="relative  group p-4 rounded-xl bg-black/40 border border-zinc-800 hover:border-[#ab20fd]/30 transition-all duration-300">
@@ -142,7 +145,11 @@ const JobDescription = () => {
                           key={index}
                           className="flex items-center gap-2 text-zinc-300"
                         >
-                          <CheckCircle2 className="w-6 h-6 text-[#ab20fd]" />
+                          {/* <CheckCircle2 className="w-6 h-6 text-[#ab20fd]"/> */}
+                          <div className="flex-shrink-0">
+                            <CheckCircle2 className="w-4 h-4 mt-1.5 text-[#ab20fd] opacity-60 group-hover/item:opacity-100" />
+                          </div>
+
                           {skill}
                         </li>
                       ))}
@@ -172,7 +179,11 @@ const JobDescription = () => {
                                 key={index}
                                 className="flex items-start gap-3 group/item"
                               >
-                                <CheckCircle2 className="w-6 h-6 mt-0.5 text-[#ab20fd] opacity-60 group-hover/item:opacity-100" />
+                                {/* <CheckCircle2 className="w-6 h-6 mt-0.5 text-[#ab20fd] opacity-60 group-hover/item:opacity-100" /> */}
+                                <div className="flex-shrink-0">
+                                  <CheckCircle2 className="w-4 h-4 mt-1.5 text-[#ab20fd] opacity-60 group-hover/item:opacity-100" />
+                                </div>
+
                                 <span className="text-zinc-300 group-hover/item:text-white transition-colors">
                                   {task}
                                 </span>
@@ -187,13 +198,17 @@ const JobDescription = () => {
               </div>
             </div>
 
+
+
             {/* Sidebar */}
             <div className="lg:col-span-4 space-y-6">
+            
               {/* Apply Now Card */}
-              <div className="sticky top-6">
+              <div className="sticky top-6 flex flex-col-reverse lg:flex-col gap-12 lg:gap-2">
                 <div className="relative group p-6 rounded-2xl bg-[#ab20fd]/10 border border-[#ab20fd]/20">
                   <h3 className="text-xl font-bold mb-4">Quick Apply</h3>
                   <button
+                    onClick={() => { navigate(`/apply/${jobid}`) }}
                     onMouseEnter={() => setIsApplyHovered(true)}
                     onMouseLeave={() => setIsApplyHovered(false)}
                     className="w-full bg-[#ab20fd] text-white rounded-xl px-6 py-3 flex items-center justify-center gap-2 hover:bg-[#ab20fd]/90 transition-all duration-300 hover:cursor-pointer"
@@ -217,7 +232,10 @@ const JobDescription = () => {
                     <ul className="space-y-3">
                       {JobDesc.PerksandBenefits.map((perk, index) => (
                         <li key={index} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-6 h-6 mt-0.5 text-[#ab20fd] hover:text-purple-400 opacity-60 group-hover/item:opacity-100" />
+                          <div className="flex-shrink-0">
+                            <CheckCircle2 className="w-4 h-4 mt-1.5 text-[#ab20fd] opacity-60 group-hover/item:opacity-100" />
+                          </div>
+
                           <span className="text-zinc-300 text-white">{perk}</span>
                         </li>
                       ))}

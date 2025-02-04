@@ -1,34 +1,35 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 // Job data structure
 const jobListings = [
   {
-    id: 1,
+    id: "FE101",
     title: "Frontend Intern",
     department: "Engineering",
     skills: ["React", "JavaScript", "TailwindCSS"],
   },
   {
-    id: 2,
+    id: "BE101",
     title: "Backend Intern",
     department: "Engineering",
     skills: ["Nodejs", "Express", "MongoDB"],
   },
   {
-    id: 3,
+    id: "SM101",
     title: "Social Marketing",
     department: "Growth",
     skills: ["SEO", "Content Marketing", "Social Media Management"],
   },
   {
-    id: 4,
+    id: "UI101",
     title: "UI/UX Designer",
     department: "Design",
     skills: ["Figma", "Adobe XD", "Prototyping"],
   },
   {
-    id: 5,
+    id: "AD101",
     title: "Android Developer",
     department: "Engineering",
     skills: ["Java", "Kotlin", "Android Studio", "Firebase"],
@@ -36,32 +37,38 @@ const jobListings = [
 ];
 
 // Job Card Component
-const JobCard = ({ title, department, skills }) => (
-  <div className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd]/30 transition-all duration-300">
-    {/* <div> */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#ab20fd]/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 border border-purple-500"></div>
-
-    <div>
-      <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
-      <p className="text-gray-500 mb-4">{department}</p>
-      <div className="flex flex-wrap gap-2">
-        {skills.map((skill) => (
-          <span
-            key={skill}
-            className="px-3 py-1 rounded-lg bg-[#ab20fd]/10 text-[#ab20fd] text-sm"
-          >
-            {skill}
-          </span>
-        ))}
+const JobCard = ({ id, title, department, skills }) => {
+  const navigate = useNavigate();
+  return (
+    <>
+      <div className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-transparent transition-all duration-300 flex flex-col justify-between gap-6 cursor-pointer"
+        onClick={() => {
+          navigate(`/job-description/${id}`);
+        }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#ab20fd]/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 border border-[#ab20fd]/60"></div>
+        {/* <div> */}
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+          <p className="text-gray-500 mb-4">{department}</p>
+          <div className="flex flex-wrap gap-2">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="px-3 py-1 rounded-lg bg-[#ab20fd]/10 text-[#ab20fd] text-sm">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="flex justify-end">
+          <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center group-hover:bg-purple-500 transition-all">
+            <ArrowUpRight className="w-5 h-5 text-white transform group-hover:rotate-45 transition-all duration-300" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="flex justify-end">
-      <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center group-hover:bg-purple-500 transition-all">
-        <ArrowUpRight className="w-5 h-5 text-white transform group-hover:rotate-45 transition-all duration-300" />
-      </div>
-    </div>
-  </div>
-);
+    </>
+  );
+}
 
 // Main Component
 const JobOpportunities = () => {
@@ -103,11 +110,11 @@ const JobOpportunities = () => {
         </div>
 
         {/* Jobs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 " >
           {jobListings.map((job, index) => (
             <React.Fragment key={job.id}>
               {index < 5 && <JobCard {...job} />}
-              {index === 4 && (
+              {/* {index === 4 && (
                 <div className="p-6 bg-purple-600 rounded-lg flex flex-col justify-between hover:bg-purple-500 transition-colors cursor-pointer h-64">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">View all</h3>
@@ -119,7 +126,7 @@ const JobOpportunities = () => {
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
             </React.Fragment>
           ))}
         </div>

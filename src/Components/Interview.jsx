@@ -74,7 +74,7 @@ const ProcessCard = ({ step, index }) => {
 
       {/* Main Card */}
 
-      <div className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd]/30 transition-all duration-300 md:h-[26rem]">
+      <div className="relative group p-8 rounded-2xl bg-black/40 border border-[#27272a] hover:border-[#ab20fd] transition-all duration-300 md:h-[26rem]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#ab20fd]/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300" />
         {/* Icon & Title */}
         <div className="mb-6">
@@ -151,13 +151,15 @@ const RecruitmentProcess = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-20">
+        {/* <div className="text-center mt-20">
           <p className="text-gray-400 mb-6">Ready to start your journey with us?</p>
+
           <button className="group inline-flex items-center gap-2 px-8 py-4 bg-[#ab20fd] rounded-xl hover:bg-[#ab20fd]/90 cursor-pointer transition-all ">
             <span className="text-white font-medium">Apply Now</span>
             <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" />
           </button>
-        </div>
+
+        </div> */}
       </div>
     </div>
   );
