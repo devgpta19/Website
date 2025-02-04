@@ -1,9 +1,6 @@
 import { Mail, Phone, MapPin, Users, CheckCircle } from "lucide-react";
 
 const aboutUsData = {
-  title: "About Us",
-  description:
-    "We are a dedicated team committed to delivering innovative solutions. Our mission is to provide high-quality services that meet the needs of our clients.",
   team: [
     {
       name: "Robin Singh",
@@ -49,10 +46,10 @@ export default function AboutUs() {
           WHO WE ARE
         </span>
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          {aboutUsData.title}
+          About <span className="text-[#ab20fd]">Us</span>
         </h1>
         <p className="text-lg text-gray-400 mb-12">
-          {aboutUsData.description}
+          We provide data-driven trade analysis and insights to help traders make informed decisions in a dynamic market. Our mission is to provide high-quality services that meet the needs of our clients.
         </p>
 
         <div className="relative">
